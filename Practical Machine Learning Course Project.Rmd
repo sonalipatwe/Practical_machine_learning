@@ -139,6 +139,7 @@ rpart.plot(model1, main="Classification Tree", extra=102, under=TRUE, faclen=0)
 confusionMatrix(prediction1, subTesting$classe)
 ```
 
+
 ###Second prediction model: Using Random Forest###
 ```{r}
 model2 <- randomForest(classe ~. , data=subTraining, method="class")
